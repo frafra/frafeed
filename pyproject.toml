@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "frafeed"
+version = "0.1.0"
+description = ""
+authors = ["Francesco Frassinelli <fraph24@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+feedparser = "^5.2"
+anosql = "^1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
