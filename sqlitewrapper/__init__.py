@@ -26,7 +26,8 @@ class SQLiteWrapper:
             setattr(self, query, functools.partial(function, self.conn))
             self.queries[query] = set()
             for match in anosql.patterns.var_pattern.finditer(function.sql):
-                if var_name := match.group("var_name"):
+                var_name = match.group("var_name")
+                if var_name:
                     self.queries[query].add(var_name)
 
         return self
