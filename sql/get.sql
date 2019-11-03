@@ -1,10 +1,21 @@
--- name: get_entries
-select *
+-- name: get_entries_all
+select title, link, summary, published
   from entries
  order by published desc
 
 -- name: get_entries_unread
-select *
+select title, link, summary, published
+  from entries
+ where read = 0
+ order by published desc
+
+-- name: get_entries_all_short
+select title, link, published
+  from entries
+ order by published desc
+
+-- name: get_entries_unread_short
+select title, link, published
   from entries
  where read = 0
  order by published desc
