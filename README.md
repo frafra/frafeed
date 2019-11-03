@@ -23,6 +23,14 @@ Example:
 ./frafeed.py frafeed.py mark_all_as_read
 ```
 
+# Pretty printing
+
+Requires [jq](https://stedolan.github.io/jq/).
+
+```
+./examples/terminal.sh
+```
+
 # How to extend it
 
 Add your own SQL queries under `sql/`: they will automatically be exposed as Python functions and they will appear in `frafeed.py --help`.
