@@ -6,7 +6,7 @@ select title, link, summary, published
 -- name: get_entries_unread
 select title, link, summary, published
   from entries
- where read = 0
+ where status = 'new'
  order by published desc
 
 -- name: get_entries_all_short
@@ -17,5 +17,5 @@ select title, link, published
 -- name: get_entries_unread_short
 select title, link, published
   from entries
- where read = 0
+ where status = 'new'
  order by published desc

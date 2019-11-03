@@ -12,6 +12,6 @@ insert or ignore into entries
              json_extract(value, "$.created_parsed"),
              json_extract(value, "$.updated_parsed")
            )),
-           '0',
+           'new',
            url
       from sources, json_each(json_extract(json(feed(url)), "$.entries"))

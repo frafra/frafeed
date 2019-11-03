@@ -8,6 +8,6 @@ create table if not exists entries (
     link        text,
     summary     text,
     published   text,
-    read        integer,
+    status      text,
     source      url references sources
 );
