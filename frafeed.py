@@ -20,7 +20,7 @@ class SQLHelpers:
 def parse_args():
     parser = argparse.ArgumentParser(description="FraFeed")
     parser.add_argument("--filename", default="feed.db")
-    subparsers = parser.add_subparsers(dest="command")
+    subparsers = parser.add_subparsers(title="command", dest="command")
     subparsers.required = True
     with SQLiteWrapper() as feed:
         for query, variables in feed.queries.items():
