@@ -3,7 +3,8 @@
 Requirements: [Poetry](https://poetry.eustace.io/) and Python 3.7 or greater.
 
 ```
-poetry run poetry install
+poetry shell
+poetry install
 ```
 
 # How to use
@@ -11,14 +12,14 @@ poetry run poetry install
 Help:
 
 ```
-poetry run -- python frafeed.py --help
+./frafeed.py --help
 ```
 
 Example:
 ```
-poetry run -- python frafeed.py add_feed http://rss.slashdot.org/Slashdot/slashdotMain
-poetry run -- python frafeed.py get_entries_unread_short
-poetry run -- python frafeed.py mark_all_as_read
+./frafeed.py add_feed http://rss.slashdot.org/Slashdot/slashdotMain
+./frafeed.py frafeed.py get_entries_unread_short
+./frafeed.py frafeed.py mark_all_as_read
 ```
 
 # How to extend it
