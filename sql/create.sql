@@ -4,5 +4,6 @@ create table if not exists entries (
     title       text,
     link        text,
     summary     text,
-    published   text
+    published   text,
+    read        integer
 )
