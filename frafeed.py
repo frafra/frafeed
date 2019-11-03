@@ -37,5 +37,4 @@ if __name__ == "__main__":
     with SQLiteWrapper(args.filename, SQLHelpers) as feed:
         feed.create_tables()
         results = getattr(feed, str(args.command))(**vars(args))
-        for result in results:
-            print(json.dumps(result, indent=4))
+        print(json.dumps(results, indent=4))
