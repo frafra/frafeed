@@ -6,7 +6,7 @@ insert or ignore into entries
            ),
            json_extract(value, "$.title"),
            json_extract(value, "$.link"),
-           json_extract(value, "$.summary"),
+           html2text(json_extract(value, "$.summary")),
            parsed2date(coalesce(
              json_extract(value, "$.published_parsed"),
              json_extract(value, "$.created_parsed"),

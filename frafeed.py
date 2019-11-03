@@ -2,6 +2,7 @@
 
 from sqlitewrapper import SQLiteWrapper
 import argparse
+import bs4
 import datetime
 import feedparser
 import json
@@ -15,6 +16,10 @@ class SQLHelpers:
     @staticmethod
     def parsed2date(parsed):
         return str(datetime.datetime(*eval(parsed)[:6]))
+
+    @staticmethod
+    def html2text(html):
+        return bs4.BeautifulSoup(html, "html.parser").text
 
 
 def parse_args():
