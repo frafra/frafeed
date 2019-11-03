@@ -1,6 +1,9 @@
 -- name: update<!
 insert or ignore into entries
-    select json_extract(value, "$.id"),
+    select coalesce(
+             json_extract(value, "$.id"),
+             json_extract(value, "$.link")
+           ),
            json_extract(value, "$.title"),
            json_extract(value, "$.link"),
            json_extract(value, "$.summary"),
