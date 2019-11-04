@@ -19,8 +19,8 @@ Example:
 ```
 ./frafeed.py add_feed http://rss.slashdot.org/Slashdot/slashdotMain
 ./frafeed.py update
-./frafeed.py frafeed.py get_entries_unread_short
-./frafeed.py frafeed.py mark_all_as_read
+./frafeed.py get_entries_unread_short
+./frafeed.py mark_all_as_read
 ```
 
 # Pretty printing
