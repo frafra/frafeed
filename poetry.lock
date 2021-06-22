@@ -23,7 +23,7 @@ lxml = ["lxml"]
 
 [[package]]
 name = "feedparser"
-version = "6.0.2"
+version = "6.0.7"
 description = "Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds"
 category = "main"
 optional = false
@@ -63,8 +63,8 @@ beautifulsoup4 = [
     {file = "beautifulsoup4-4.9.3.tar.gz", hash = "sha256:84729e322ad1d5b4d25f805bfa05b902dd96450f43842c4e99067d5e1369eb25"},
 ]
 feedparser = [
-    {file = "feedparser-6.0.2-py3-none-any.whl", hash = "sha256:f596c4b34fb3e2dc7e6ac3a8191603841e8d5d267210064e94d4238737452ddd"},
-    {file = "feedparser-6.0.2.tar.gz", hash = "sha256:1b00a105425f492f3954fd346e5b524ca9cef3a4bbf95b8809470e9857aa1074"},
+    {file = "feedparser-6.0.7-py3-none-any.whl", hash = "sha256:ac129cef1e7cd511bc269af029acbc4124dd7c7eb9a43a145de8df16ed5341ea"},
+    {file = "feedparser-6.0.7.tar.gz", hash = "sha256:e280e589396c0b4e502db0b0a363dbc4c6a2cade8fee4109f1a05a255c680cbc"},
 ]
 sgmllib3k = [
     {file = "sgmllib3k-1.0.0.tar.gz", hash = "sha256:7868fb1c8bfa764c1ac563d3cf369c381d1325d36124933a726f29fcdaa812e9"},
